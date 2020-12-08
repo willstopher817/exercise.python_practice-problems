@@ -2,33 +2,35 @@
 class Lister(object):
     def get_integer_list(self, start, stop, step):
         ''' TODO - Implement solution
-        Given three integers,
+        Given 3 integers,
             `start`, `stop`, and `step`
         return a list of all integers
             between `start`,
             incrementing by `step`,
-            up to and not including `stop`
+            up to and including `stop`
         '''
         return None
 
-    def get_even_list(self, start, stop):
+    def get_even_list(self, start, stop, step):
         ''' TODO - Implement solution
-        Given three integers,
+        Given 3 integers,
             `start`, `stop`, and `step`
         return a list of all integers
             between `start`,
             incrementing by `step`,
+            up to and including `stop`
             and are divisible by 2
         '''
         return None
 
-    def get_odd_list(self, start, stop):
+    def get_odd_list(self, start, stop, step):
         ''' TODO - Implement solution
-        Given three integers,
+        Given 3 integers,
             `start`, `stop`, and `step`
         return a list of all integers
             between `start`,
             incrementing by `step`,
+            up to and including `stop`
             and are not divisible by 2
         '''
         return None
