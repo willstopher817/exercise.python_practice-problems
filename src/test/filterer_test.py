@@ -115,11 +115,11 @@ class FitlererTest(TestCase):
         self.test_unary_function(Filterer().remove_vowels, [
             (  # test case 0
                 "Hello!",
-                "eo"),
+                "eo!"),
 
             (  # test case 1
                 "Hey!",
-                "Hy!"),
+                "e!"),
 
             (  # test case 2
                 "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
