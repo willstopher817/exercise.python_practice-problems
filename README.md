@@ -39,8 +39,8 @@
     1. clone this project from the Github Web interface to your local machine
     2. navigate to the root directory of the project
     3. open the newly cloned project from your local machine in PyCharm
-    4. open a module to be edited (`calculator.py`)
-    5. run corresponding tests for the module to be edited (`calculator_test.py`)
+    4. open a module to be edited
+    5. run corresponding tests for the module to be edited
 
 <a href="https://raw.githubusercontent.com/platformps/exercise.python_fundamentals/master/getting-started.gif"><img src="./getting-started.gif"></a>
     
