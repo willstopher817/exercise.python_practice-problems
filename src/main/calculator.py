@@ -1,13 +1,34 @@
-# Created by Leon Hunter at 9:54 AM 10/23/2020
+# Created by Leon Hunter at 12:10 PM 12/08/2020
 class Calculator(object):
-    def add(self, a, b):
-        return None # TODO - Implement solution
+    def get_integer_list(self, start, stop, step):
+        ''' TODO - Implement solution
+        Given three integers,
+            `start`, `stop`, and `step`
+        return a list of all integers
+            between `start`,
+            incrementing by `step`,
+            up to and not including `stop`
+        '''
+        return None
 
-    def subtract(self, a, b):
-        return None # TODO - Implement solution
+    def get_even_list(self, start, stop):
+        ''' TODO - Implement solution
+        Given three integers,
+            `start`, `stop`, and `step`
+        return a list of all integers
+            between `start`,
+            incrementing by `step`,
+            and are divisible by 2
+        '''
+        return None
 
-    def multiply(self, a, b):
-        return None # TODO - Implement solution
-
-    def divide(self, a, b):
-        return None # TODO - Implement solution
+    def get_odd_list(self, start, stop):
+        ''' TODO - Implement solution
+        Given three integers,
+            `start`, `stop`, and `step`
+        return a list of all integers
+            between `start`,
+            incrementing by `step`,
+            and are not divisible by 2
+        '''
+        return None
