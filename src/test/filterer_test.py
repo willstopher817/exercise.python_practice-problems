@@ -5,7 +5,7 @@ from src.main.filterer import Filterer
 
 
 class FitlererTest(TestCase):
-    def test_binary_function(self, method_to_test, value_sets):
+    def _test_binary_function(self, method_to_test, value_sets):
         for value_set in value_sets:
             # given
             function_tested = method_to_test.__name__
@@ -29,7 +29,7 @@ class FitlererTest(TestCase):
             # then
             self.assertEquals(expected_calculation, actual_calculation, msg=calculation_error_message)
 
-    def test_unary_function(self, method_to_test, value_sets):
+    def _test_unary_function(self, method_to_test, value_sets):
         for value_set in value_sets:
             # given
             function_tested = method_to_test.__name__
@@ -49,10 +49,10 @@ class FitlererTest(TestCase):
                        actual_calculation)
 
             # then
-            self.assertEquals(expected_calculation, actual_calculation, msg=calculation_error_message)
+            self.assertEqual(expected_calculation, actual_calculation, msg=calculation_error_message)
 
     def test_remove_characters(self):
-        self.test_binary_function(Filterer().remove_characters, [
+        self._test_binary_function(Filterer().remove_characters, [
             (  # test case 0
                 "Hello!",
                 "He!",
@@ -85,7 +85,7 @@ class FitlererTest(TestCase):
         ])
 
     def test_remove_vowels(self):
-        self.test_unary_function(Filterer().remove_vowels, [
+        self._test_unary_function(Filterer().remove_vowels, [
             (  # test case 0
                 "Hello!",
                 "Hll!"),
@@ -112,7 +112,7 @@ class FitlererTest(TestCase):
         ])
 
     def test_remove_consonants(self):
-        self.test_unary_function(Filterer().remove_vowels, [
+        self._test_unary_function(Filterer().remove_consonants, [
             (  # test case 0
                 "Hello!",
                 "eo!"),
