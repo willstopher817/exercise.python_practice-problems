@@ -24,7 +24,7 @@
     * `git commit` your added files to the list of your `staged` files.
     * `git push` your staged files to your remote repository.
     * submit a `pull request` which compares Perscholas `master` to your `master`.
-2. Begin by first ensuring the `main` method in your `perscholas_rocks.py` module prints `"Perscholas Rocks!"` upon execution.  
+2. Begin by first ensuring the `main` method in your `main_application.py` module prints `"Hello World!"` upon execution.  
 3. Complete each of the method stubs in each of the `main` classes provided.
     * There are comments above each method stub to describe the expected behavior.
 4. Upon completion, open and run the all test-classes to ensure that all tests have 100% success.
