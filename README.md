@@ -53,4 +53,5 @@
     2. navigate to the root directory of the project
     3. using `unittest`, run all python files with a prefix of `_test.py`
         * `python -m unittest discover -s ./src/test/ -p '*_test.py'`
+
 [![](./run-tests-cli.gif)](./run-tests-cli.gif)
