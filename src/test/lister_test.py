@@ -5,7 +5,7 @@ from unittest import TestCase
 from src.main.lister import Lister
 
 
-class CalculatorTest(TestCase):
+class ListerTest(TestCase):
     def _test(self, method_to_test, value_sets):
         for value_set in value_sets:
             # given
@@ -30,7 +30,7 @@ class CalculatorTest(TestCase):
                        actual_calculation)
 
             # then
-            self.assertAlmostEqual(expected_calculation, actual_calculation, calculation_error_message)
+            self.assertEquals(expected_calculation, actual_calculation, calculation_error_message)
 
     def test_get_integer_list(self):
         self._test(Lister().get_integer_list, [
@@ -56,17 +56,6 @@ class CalculatorTest(TestCase):
 
     def test_get_odd_list(self):
         self._test(Lister().get_odd_list, [
-            (0, 0, 0, []),
-            (0, 10, 1, [1, 3, 5, 7, 9]),
-            (0, 10, 2, []),
-            (0, 10, 3, [3, 9]),
-            (0, 10, 5, [5]),
-            (1, 15, 2, [1, 3, 5, 7, 9, 11, 13, 15]),
-            (1, 15, 3, [1, 7, 13])
-        ])
-
-    def test_strange_list(self):
-        self._test(Lister().get_strange_list, [
             (0, 0, 0, []),
             (0, 10, 1, [1, 3, 5, 7, 9]),
             (0, 10, 2, []),
