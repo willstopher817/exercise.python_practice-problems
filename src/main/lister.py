@@ -1,5 +1,5 @@
 # Created by Leon Hunter at 12:10 PM 12/08/2020
-class Calculator(object):
+class Lister(object):
     def get_integer_list(self, start, stop, step):
         ''' TODO - Implement solution
         Given three integers,

@@ -2,7 +2,7 @@
 from numbers import Number
 from unittest import TestCase
 
-from src.main.calculator import Calculator
+from src.main.lister import Lister
 
 
 class CalculatorTest(TestCase):
@@ -33,7 +33,7 @@ class CalculatorTest(TestCase):
             self.assertAlmostEqual(expected_calculation, actual_calculation, calculation_error_message)
 
     def test_get_integer_list(self):
-        self._test(Calculator().get_integer_list, [
+        self._test(Lister().get_integer_list, [
             (0, 0, 0, [0]),
             (0, 10, 1, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
             (0, 10, 2, [0, 2, 4, 6, 8, 10]),
@@ -44,7 +44,7 @@ class CalculatorTest(TestCase):
         ])
 
     def test_get_even_list(self):
-        self._test(Calculator().get_even_list, [
+        self._test(Lister().get_even_list, [
             (0, 0, 0, [0]),
             (0, 10, 1, [0, 2, 4, 6, 8, 10]),
             (0, 10, 2, [0, 2, 4, 6, 8, 10]),
@@ -55,7 +55,7 @@ class CalculatorTest(TestCase):
         ])
 
     def test_get_odd_list(self):
-        self._test(Calculator().get_odd_list, [
+        self._test(Lister().get_odd_list, [
             (0, 0, 0, []),
             (0, 10, 1, [1, 3, 5, 7, 9]),
             (0, 10, 2, []),
@@ -66,7 +66,7 @@ class CalculatorTest(TestCase):
         ])
 
     def test_strange_list(self):
-        self._test(Calculator().get_strange_list, [
+        self._test(Lister().get_strange_list, [
             (0, 0, 0, []),
             (0, 10, 1, [1, 3, 5, 7, 9]),
             (0, 10, 2, []),
