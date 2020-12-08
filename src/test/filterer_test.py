@@ -27,7 +27,7 @@ class FitlererTest(TestCase):
                        actual_calculation)
 
             # then
-            self.assertAlmostEqual(expected_calculation, actual_calculation, msg=calculation_error_message)
+            self.assertEquals(expected_calculation, actual_calculation, msg=calculation_error_message)
 
     def test_unary_function(self, method_to_test, value_sets):
         for value_set in value_sets:
@@ -49,7 +49,7 @@ class FitlererTest(TestCase):
                        actual_calculation)
 
             # then
-            self.assertAlmostEqual(expected_calculation, actual_calculation, msg=calculation_error_message)
+            self.assertEquals(expected_calculation, actual_calculation, msg=calculation_error_message)
 
     def test_remove_characters(self):
         self.test_binary_function(Filterer().remove_characters, [
@@ -104,12 +104,11 @@ class FitlererTest(TestCase):
 
             (  # test case 4
                 "The Quick Brown Fox Jumps Over The Lazy Dog",
-                "the quick brown fox jumps over the lazy dog"),
+                "Th Qck Brwn Fx Jmps vr Th Lzy Dg"),
 
             (  # test case 5
                 "aeiou",
-                "The Quick Brown Fox Jumps Over The Lazy Dog",
-                "tqbfjtld")
+                "")
         ])
 
     def test_remove_consonants(self):
