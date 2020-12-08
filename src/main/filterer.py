@@ -40,7 +40,8 @@ class Filterer(object):
         '''
         target = 'bcdfghjklmnpqrstvwxyz'
         res = ''
-        for character in string_to_remove_from.lower():
-            if character not in target:
+        for character in string_to_remove_from:
+            if character.lower() not in target:
                 res += character
         return res
+
