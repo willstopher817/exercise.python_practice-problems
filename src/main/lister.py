@@ -11,8 +11,11 @@ class Lister(object):
         '''
         li = []
         while start <= stop:
-            li.append(start)
-            start += step
+            if step == 0:
+                return [0]
+            else:
+                li.append(start)
+                start += step
         return li
 
     def get_even_list(self, start, stop, step):
@@ -27,11 +30,14 @@ class Lister(object):
         '''
         li = []
         while start <= stop:
-            if start % 2 == 0:
-                li.append(start)
-                start += step
+            if step == 0:
+                return [0]
             else:
-                start += step
+                if start % 2 == 0:
+                    li.append(start)
+                    start += step
+                else:
+                    start += step
         return li
 
     def get_odd_list(self, start, stop, step):
@@ -46,9 +52,12 @@ class Lister(object):
         '''
         li = []
         while start <= stop:
-            if start % 2 != 0:
-                li.append(start)
-                start += step
+            if step == 0:
+                return []
             else:
-                start += step
+                if start % 2 != 0:
+                    li.append(start)
+                    start += step
+                else:
+                    start += step
         return li
