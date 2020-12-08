@@ -40,7 +40,7 @@
     4. open a module to be edited
     5. run corresponding tests for the module to be edited
 
-<a href="https://raw.githubusercontent.com/platformps/exercise.python_fundamentals/master/getting-started.gif"><img src="./getting-started.gif"></a>
+[![](./getting-started.gif)](./getting-started.gif)
     
     
 ### Running Tests From Command Line 
@@ -49,8 +49,7 @@
     2. navigate to the root directory of the project
     3. using `unittest`, run all python files with a prefix of `_test.py`
         * `python -m unittest discover -s ./src/test/ -p '*_test.py'`
-        
-<a href="https://raw.githubusercontent.com/platformps/exercise.python_fundamentals/master/run-tests-cli.gif"><img src="./run-tests-cli.gif"></a>
+[![](./run-tests-cli.gif)](./run-tests-cli.gif)
 
 ## Creating Continuous Integration Pipeline
 * Ensure that a pipeline has been created on [`TravisCi.com`](TravisCi.com)
