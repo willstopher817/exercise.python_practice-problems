@@ -54,4 +54,6 @@
         
 <a href="https://raw.githubusercontent.com/platformps/exercise.python_fundamentals/master/run-tests-cli.gif"><img src="./run-tests-cli.gif"></a>
 
-
+## Creating Continuous Integration Pipeline
+* Ensure that a pipeline has been created on [`TravisCi.com`](TravisCi.com)
+* Verify that each of the tests in your TravisCI pipeline are passing successfully upon build and deployment
